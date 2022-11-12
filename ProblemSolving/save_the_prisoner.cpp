@@ -8,10 +8,7 @@ vector<string> split(const string &);
 
 int saveThePrisoner(int n, int m, int s) 
 {
-    int return_value = (m % n) + (s - 1);
-    // if (!return_value)
-    //     return_value = n;
-
+    int return_value = ((s - 1 + m) % n);
     return (return_value) ? return_value:n;
 }
 
